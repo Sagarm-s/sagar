@@ -1,0 +1,9 @@
+from gtts import gTTS
+import playsound
+try:
+  text=input("Enter:")
+  sound=gTTS(text,lang='en')
+  sound.save("welcome.mp3")
+  playsound.playsound("welcome.mp3")
+except:
+  print("some error occured")
